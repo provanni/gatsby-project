@@ -198,7 +198,7 @@ html {
 }
 body {
   color: hsla(0, 0%, 0%, 0.8);
-  font-family: georgia, serif;
+  font-family: Roboto Mono, serif;
   font-weight: normal;
   word-wrap: break-word;
   font-kerning: normal;
@@ -621,4 +621,24 @@ pre tt:after {
   html {
     font-size: 100%;
   }
+}
+
+/*custome range slider */
+.rangeslider__labels {
+  margin-left: 0;
+}
+
+.rangeslider-horizontal .rangeslider__handle {
+  font-size: 13px;
+}
+
+.custom-labels .rangeslider-horizontal .rangeslider__handle-label {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate3d(-50%,-50%,0);
+}
+
+.custom-labels .rangeslider-horizontal .rangeslider__handle:after {
+  position: static;
 }

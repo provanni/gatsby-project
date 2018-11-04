@@ -9,7 +9,13 @@ const persistConfig = {
   storage,
   whitelist: ['auth'],
 };
-const enhancer = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
+let enhancer;
+if (process.env.NODE_ENV !== 'production') {
+  enhancer = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
+} else {
+  enhancer = compose;
+}
+
 export const configureStore = (initialState) => {
   const persistedReducer = persistReducer(persistConfig, reducer);
 
