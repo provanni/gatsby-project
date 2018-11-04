@@ -58,7 +58,10 @@ class EmotionsList extends Component {
 
   onSubmitButtonClick = () => {
     const { name, id } = this.state.currentEmoClicked;
-    this.props.submitEmotion({ scaleValue: this.state.value, name, id })
+    this.props.submitEmotion({ scaleValue: this.state.value, name, id });
+    this.setState({
+      open: false,
+    })
   }
 
   render() {
