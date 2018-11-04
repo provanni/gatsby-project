@@ -9,6 +9,7 @@ class IndexPage extends React.Component {
     return (
       <Layout>
         <h2>How are you feeling right now?</h2>
+        <Link to="/">Your Dashboard</Link>
         {/*<Login onAuthChange={this.handleLogin}/>*/}
         <EmotionPicker />
 
