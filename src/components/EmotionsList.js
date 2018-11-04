@@ -100,7 +100,7 @@ class EmotionsList extends Component {
                   format={value => value}
                   min={0}
                   max={5}
-                  handleLabel={this.state.value}
+                  handleLabel={this.state.value.toString()}
                   value={this.state.value}
                   onChange={this.handleChange}
                 />

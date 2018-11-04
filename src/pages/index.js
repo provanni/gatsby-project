@@ -1,14 +1,20 @@
 import React from 'react'
 import Layout from '../components/layout'
 import EmotionPicker from '../components/EmotionPicker';
+// import Login from '../components/Login'
 
+class IndexPage extends React.Component {
 
-const IndexPage = () => (
-  <Layout>
-    <h2>How are you feeling right now?</h2>
-    <EmotionPicker />
+  render() {
+    return (
+      <Layout>
+        <h2>How are you feeling right now?</h2>
+        {/*<Login onAuthChange={this.handleLogin}/>*/}
+        <EmotionPicker />
 
-  </Layout>
-)
+      </Layout>
+    )
+  }
+}
 
-export default IndexPage
+export default IndexPage;
