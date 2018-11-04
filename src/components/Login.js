@@ -1,8 +1,10 @@
 import './login.css'
 import React, {Component} from 'react';
 
-import netlifyIdentity from "netlify-identity-widget";
-netlifyIdentity.init();
+const netlifyIdentity = require("netlify-identity-widget");
+if (typeof document !== 'undefined') {
+  netlifyIdentity.init();
+}
 
 function saveLogin() {
    if (netlifyIdentity && netlifyIdentity.currentUser()) {

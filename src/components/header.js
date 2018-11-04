@@ -38,7 +38,7 @@ class Header extends Component {
             </Link>
           </h1>
           <div>
-            <Login onAuthChange={this.handleLogin}/>
+            {/*<Login onAuthChange={this.handleLogin}/>*/}
           </div>
         </div>
 

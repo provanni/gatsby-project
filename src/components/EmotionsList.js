@@ -126,4 +126,4 @@ class EmotionsList extends Component {
 export default connect(
   null,
   { submitEmotion }
-)(withStyles(styles)(EmotionsList))
+)(withStyles(styles, { name: 'EmotionsList' })(EmotionsList))
